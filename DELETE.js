@@ -1,30 +1,4 @@
 const test = QUnit.test;
-const todoData = [
-    {
-        text: 'Eat Breakfast',
-        completed: true
-    },
-    {
-        text: 'Eat Lunch',
-        completed: false
-    },
-    {
-        text: 'Eat Dinner',
-        completed: false
-    },
-    {
-        text: 'Take Meds',
-        completed: false
-    },
-    {
-        text: 'Feed Pet Snake',
-        completed: false
-    },
-    {
-        text: 'Water Plants',
-        completed: false
-    },
-];
 QUnit.module('sort function test 1');
 
 function sort(todoData, sortOptions) {

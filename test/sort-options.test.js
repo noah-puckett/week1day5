@@ -1,3 +1,5 @@
+import sortList from '../sortList.js';
+
 const test = QUnit.test;
 QUnit.module('sort function test 1');
 
@@ -18,21 +20,6 @@ const pruitt = {
 };
 
 const contacts = [cantu, pruitt, george];
-
-function sortList(contacts, sortOptions) {
-    const property = sortOptions.property;
-    const direction = sortOptions.direction; 
-
-    return contacts.slice().sort((a, b) => {
-        if(a[property] > b[property]) {
-            return 1 * direction;
-        }
-        else if(b[property] > a[property]) {
-            return -1 * direction;
-        }
-        return 0;
-    });
-}
 
 test('sorts on name', assert => {
 
